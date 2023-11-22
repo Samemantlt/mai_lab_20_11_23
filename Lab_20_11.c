@@ -3,9 +3,6 @@
 #include <math.h>
 
 
-#define SWAP(a, b) do { typeof(a) temp = a; a = b; b = temp; } while (0)
-
-
 typedef long long number;
 
 
@@ -82,4 +79,7 @@ int main(int argc, char** args) {
     cycleMoveVertical(matrix, 115);
 
     print_matrix(matrix);
+
+    free(matrix.numbers);
+    fclose(file);
 }
